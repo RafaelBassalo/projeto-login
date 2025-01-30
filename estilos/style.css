@@ -3,7 +3,7 @@
 /*
      Paleta de cores
      azul forte = #016C8E
-     azul fraco = #1A99B9
+     azul fraco = #44d3f7
      verde = #467C64
      nude = #D1A485
      bege = #D9B1A3
@@ -17,7 +17,7 @@
 }
 
 body, html{
-    background-color: #1A99B9;
+    background-image: linear-gradient(to top, #016C8E, #44d3f7);
     height: 100vh;
     width: 100vw;
 
@@ -42,6 +42,9 @@ section#login {
     border-radius: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
 
+    transition: width .5s, heigth .5s;
+    transition-timing-function: ease;
+
 }
 
 section#login > div#imagem {
@@ -55,4 +58,13 @@ section#login > div#imagem {
 section#login > div#formulario {
     display: block;
     padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
 }
