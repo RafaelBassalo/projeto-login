@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/*
+     Paleta de cores
+     azul forte = #016C8E
+     azul fraco = #1A99B9
+     verde = #467C64
+     nude = #D1A485
+     bege = #D9B1A3
+*/
+
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: #1A99B9;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+}
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #1A99B9 url(../imagens/mar.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
